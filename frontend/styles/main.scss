@@ -748,4 +748,157 @@ body {
         /* Sesuaikan ukuran teks pada mobile */
     }
 }
+
 // ** END SECTION EXPLORE CATEGORY  **//
+
+
+/* General Styling */
+/* General Styling */
+.how-it-works {
+    padding: 0 20px;
+    padding-bottom: 80px;
+}
+
+.how-it-works-header {
+    text-align: center;
+    margin-bottom: 70px;
+
+}
+
+.how-it-works-header h1 {
+    font-size: 2.5em;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.how-it-works-header p {
+    font-size: 1.2em;
+    color: #666;
+}
+
+/* Container for the section */
+.how-it-works-container {
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    /* Space between image and icons */
+    align-items: flex-start;
+    /* Align items at the top */
+}
+
+/* Image on the left */
+.how-it-works-image {
+    width: 400px;
+    margin-left: -150px;
+    height: auto;
+}
+
+/* Icons on the right */
+.how-it-works-icons {
+    display: flex;
+    flex-direction: column;
+    /* Stack the icons vertically */
+    gap: 30px;
+    /* Space between icon cards */
+}
+
+/* Individual icon section (icon + text) */
+.icon-section {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    /* Space between icon and text */
+}
+
+/* Icon inside a circle */
+.icon-card {
+    width: 50px;
+    height: 50px;
+    background-color: #2447f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+
+.how-it-works-icon {
+    width: 25px;
+}
+
+/* Title and description next to the icon */
+.how-it-works-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+    /* Align text to the left */
+}
+
+.how-it-works-title {
+    font-size: 1.2em;
+    margin: 0;
+    font-weight: bold;
+}
+
+.how-it-works-desc {
+    font-size: 0.9em;
+    color: #666;
+    margin: 5px 0 0;
+}
+
+@media (max-width: 991px) {
+    .how-it-works-container {
+        flex-direction: column;
+        /* Stack image and icons vertically */
+        align-items: center;
+    }
+
+    .how-it-works-image {
+        width: 100%;
+        /* Full width for image on smaller screens */
+        max-width: 400px;
+        margin-left: 0;
+        margin-bottom: -50px;
+    }
+
+
+    .icon-section {
+        flex-direction: column;
+        /* Stack icon and text on small screens */
+        align-items: center;
+    }
+
+    .how-it-works-text {
+        text-align: center;
+        /* Center text on small screens */
+    }
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .how-it-works-container {
+        flex-direction: column;
+        /* Stack image and icons vertically */
+        align-items: center;
+    }
+
+    .how-it-works-image {
+        width: 100%;
+        /* Full width for image on smaller screens */
+        max-width: 400px;
+        margin-left: 0;
+        margin-bottom: -50px;
+    }
+
+
+    .icon-section {
+        flex-direction: column;
+        /* Stack icon and text on small screens */
+        align-items: center;
+    }
+
+    .how-it-works-text {
+        text-align: center;
+        /* Center text on small screens */
+    }
+}
