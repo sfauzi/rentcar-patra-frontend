@@ -7,6 +7,8 @@
         <meta http-equiv="X-UA-Compatible" content="ie=edge" />
         <title>Document</title>
         <link rel="stylesheet" href="frontend/libraries/bootstrap/css/bootstrap.css" />
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link
@@ -28,8 +30,89 @@
     <body>
 
 
+
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container">
+                <div class="logo">
+                    <img src="frontend/images/logo.svg" alt="Logo" />
+                </div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contact</a>
+                        </li>
+                    </ul>
+                    <div class="btn-container">
+                        <button class="btn btn-primary">Login</button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Content Section -->
+        <section class="header-content">
+            <div class="left-content">
+                <h1>Fast and Easy Way To Rent A Car</h1>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Architecto molestias aspernatur, delectus
+                    suscipit autem ut.</p>
+
+                <div class="card-search">
+                    <form>
+                        <input type="text" placeholder="Search...">
+                        <select>
+                            <option value="">Select Brand</option>
+                            <option value="option1">Option 1</option>
+                            <option value="option2">Option 2</option>
+                        </select>
+                        <select>
+                            <option value="">Select Type</option>
+                            <option value="option1">Option 1</option>
+                            <option value="option2">Option 2</option>
+                        </select>
+                        <button class="btn-primary" type="submit">Search</button>
+                    </form>
+                </div>
+
+                <!-- New Image Below Card Search -->
+                <!-- <img src="frontend/images/list-many-more.svg" alt="Description" class="search-image" /> -->
+            </div>
+            <div class="right-content">
+                <img src="frontend/images/hero.svg" alt="Image" />
+            </div>
+        </section>
+
+        <!-- Image Section Below Header -->
+        <div class="image-below-header">
+            <img src="frontend/images/list-many-more.svg" alt="Description" class="search-image" />
+        </div>
+
+
+
         <script src="frontend/scripts/swiper-bundle.min.jsx"></script>
         <script src="frontend/scripts/main.js"></script>
+        <!-- Bootstrap CSS -->
+
+        <!-- jQuery (optional, if using Bootstrap 5 with native JS, this is not needed) -->
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+        <!-- Bootstrap JS (including Popper.js) -->
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+
         <script src="https://cdn.jsdelivr.net/npm/swiper@11.1.4/swiper-bundle.min.js"></script>
         <script src="frontend/libraries/jquery/jquery-3.7.1.min.js"></script>
         <script src="frontend/libraries/bootstrap/js/bootstrap.js"></script>
