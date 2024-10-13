@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* Global styles */
 body {
   font-family: "Poppins", sans-serif;
@@ -1094,5 +1095,209 @@ body {
 @media (max-width: 768px) {
   .faq-section {
     padding: 0 40px;
+  }
+}
+.start-growing-today {
+  background-color: #f6f8fd;
+  /* Background color for the section */
+  padding: 50px 20px;
+  /* Padding for the section */
+}
+
+.container {
+  max-width: 1200px;
+  /* Maximum width for the content */
+  margin: 0 auto;
+  /* Centering the content */
+}
+
+.main-card {
+  background-color: #2447f9;
+  /* Background color for the main card */
+  padding: 50px 50px;
+  border-radius: 35px;
+  /* Rounded corners */
+  display: flex;
+  /* Flexbox for alignment */
+  justify-content: space-between;
+  /* Space between the columns */
+  align-items: center;
+  /* Center items vertically */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  /* Shadow for the card */
+}
+
+.main-content {
+  flex: 0 0 50%;
+  /* Set main content to take up half the space */
+  max-width: 50%;
+  /* Ensure it doesn’t exceed half the width */
+  margin-left: 15px;
+  /* Space between text and icon cards */
+  text-align: left;
+  margin-right: 30px;
+  /* Align text to the left */
+}
+
+.main-content h1 {
+  font-size: 2em;
+  color: #fff;
+  font-weight: bold;
+  /* Font size for the main heading */
+  margin-bottom: 10px;
+  /* Space below the heading */
+}
+
+.main-content p {
+  font-size: 1.1em;
+  color: #fff;
+  /* Font size for the description */
+  margin-bottom: 20px;
+  /* Space below the paragraph */
+}
+
+.explore-button {
+  background-color: #fff;
+  /* Button background color */
+  color: #2447f9;
+  /* Button text color */
+  border: none;
+  /* Remove border */
+  padding: 10px 20px;
+  /* Padding for the button */
+  font-weight: bold;
+  border-radius: 25px;
+  /* Rounded corners for the button */
+  cursor: pointer;
+  /* Pointer cursor on hover */
+  transition: background-color 0.3s;
+  /* Smooth background transition */
+}
+
+.explore-button:hover {
+  box-shadow: 0 0 0 0.25rem rgba(104, 163, 251, 0.2509803922) !important;
+  transition: all 0.4s;
+}
+
+.icon-cards-growing {
+  display: flex;
+  /* Flexbox for icon cards */
+  flex-wrap: wrap;
+  /* Wrap icon cards into the next line */
+  gap: 20px;
+  /* Space between each icon card */
+  width: 100%;
+}
+
+.icon-card-growing {
+  background-color: #fdfdfd;
+  /* Background color for icon cards */
+  border-radius: 15px;
+  /* Rounded corners */
+  padding: 15px;
+  /* Padding inside the icon card */
+  text-align: center;
+  /* Center the text */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  /* Shadow for icon card */
+  width: 150px;
+  /* Fixed width for icon cards */
+  height: 170px;
+  /* Fixed height for icon cards */
+  display: flex;
+  /* Flexbox for vertical arrangement */
+  flex-direction: column;
+  /* Stack items vertically */
+  justify-content: center;
+  /* Center items vertically */
+  align-items: center;
+  /* Center items horizontally */
+}
+
+.icon-image-growing {
+  width: 50px;
+  /* Width of the icon images */
+  height: 50px;
+  /* Height of the icon images */
+  margin-bottom: 10px;
+  /* Space below the icon */
+}
+
+.icon-card-growing h3 {
+  font-size: 1.2em;
+  /* Font size for icon card heading */
+  margin: 0;
+  font-weight: bold;
+  /* Remove default margin */
+}
+
+@media (max-width: 768px) {
+  .main-card {
+    flex-direction: column;
+    /* Stack main content and icon cards on small screens */
+  }
+  .main-content {
+    margin-right: 0;
+    /* Remove margin for small screens */
+    margin-bottom: 20px;
+    /* Space below the main content */
+    max-width: 100%;
+    /* Full width on small screens */
+  }
+  .icon-cards-growing {
+    width: 100%;
+    /* Full width on small screens */
+  }
+  .icon-card-growing {
+    flex: 1 0 45%;
+    /* Two columns on small screens */
+    max-width: 45%;
+    /* Maximum width for icon cards */
+  }
+}
+@media (max-width: 991px) {
+  .icon-cards-growing {
+    justify-content: center; /* Center cards horizontally */
+  }
+  .icon-card-growing {
+    flex: 0 0 calc(50% - 15px); /* 50% width minus the gap */
+    /* Adjust the width to be 50% for 2 cards per row */
+  }
+}
+@media (max-width: 768px) {
+  .main-content {
+    margin-left: 0;
+    margin-bottom: 50px;
+  }
+  .icon-card-growing h3 {
+    font-size: 14px;
+    /* Font size for icon card heading */
+    margin: 0;
+    font-weight: bold;
+    /* Remove default margin */
+  }
+  .icon-cards-growing {
+    justify-content: center;
+    /* Center cards horizontally */
+  }
+  .icon-image-growing {
+    width: 50px;
+    height: 50px;
+  }
+  .icon-cards-growing {
+    justify-content: center; /* Center cards horizontally */
+  }
+  .icon-card-growing {
+    flex: 0 0 calc(50% - 10px); /* 50% width minus the gap */
+    /* Adjust the width to be 50% for 2 cards per row */
+  }
+}
+@media (max-width: 360px) {
+  .icon-cards-growing {
+    justify-content: center; /* Center cards horizontally */
+  }
+  .icon-card-growing {
+    flex: 0 0 calc(50% - 50px); /* 50% width minus the gap */
+    /* Adjust the width to be 50% for 2 cards per row */
   }
 }/*# sourceMappingURL=main.css.map */
