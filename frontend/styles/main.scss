@@ -936,3 +936,178 @@ body {
 }
 
 // ** END SECTION HOW IT WORKS  **//
+
+
+
+// ** START SECTION WHAT PEOPLE SAY  **//
+
+/* Section background */
+.people-say-car-reviews {
+    background-image: url('../images/bg-testimony.svg');
+    /* Replace with your image path */
+    background-size: cover;
+    background-position: center;
+    padding: 60px 20px;
+    color: white;
+}
+
+/* Title styling */
+.people-say-title {
+    font-size: 3rem;
+    color: #333;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.people-say-desc {
+    font-size: 20px;
+    color: #333;
+    text-align: center;
+    margin-top: -20px;
+    margin-bottom: 80px;
+}
+
+
+/* Scrollable car-review cards container */
+.car-reviews-wrapper {
+    display: flex;
+    overflow-x: auto; /* Horizontal scroll jika diperlukan */
+    background-color: #051334;
+    backdrop-filter: blur(30px);
+    padding: 50px;
+    border-radius: 20px;
+    gap: 20px;
+    padding-bottom: 10px;
+}
+
+.car-reviews-wrapper::-webkit-scrollbar {
+    // height: 8px;
+    // background: rgba(255, 255, 255, 0.2); /* Styling the scrollbar track */
+    display: none;
+}
+
+.car-reviews-wrapper::-webkit-scrollbar-thumb {
+    background: #555;
+    /* Styling the scrollbar handle */
+    border-radius: 10px;
+}
+
+/* Individual car-review card styling */
+.car-review-card {
+    background: #fff;
+    color: #000;
+    width: 250px; /* Lebar tetap */
+    min-width: 250px;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 35px;
+    height: auto; /* Tinggi menyesuaikan dengan isi */
+    transition: transform 0.3s, box-shadow 0.3s;
+    animation: slide-left-right 5s linear infinite; /* Animasi gerak */
+
+/* Animasi gerakan card */
+@keyframes slide-left-right {
+    0% {
+        transform: translateX(0); /* Awal (posisi default) */
+    }
+    100% {
+        transform: translateX(-100%); /* Gerak ke kiri sepenuhnya */
+    }
+}
+
+}
+.car-review-card:hover {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    transform: translateY(-2px);
+}
+
+/* car-review cover image */
+.car-review-cover {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+/* car-review title */
+.car-review-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    margin-top: 30px;
+}
+
+/* car-review description with '...more' */
+.car-review-description {
+    font-size: 14px;
+    color: #333;
+    margin-bottom: 15px;
+    /* Biarkan tinggi deskripsi menyesuaikan dengan teks */
+    height: auto;
+    overflow: visible; /* Pastikan tidak ada teks yang tersembunyi */
+}
+
+.card-rating-review {
+    margin: 5px 0 10px;
+    /* Space around the rating section */
+    color: #FFD700;
+    /* Gold color for stars */
+    
+}
+
+
+/* car-review footer with author and category */
+.car-review-footer {
+    display: flex;
+    align-items: center;
+    margin-top: 0;
+    /* Push footer to the bottom */
+}
+
+/* Author photo */
+.author-photo {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+/* car-review category and author name */
+.car-review-info {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: -20px;
+    justify-content: center;
+}
+
+.car-review-category {
+    margin-bottom: 0;
+    font-size: 0.8rem;
+    color: #555;
+}
+
+.author-name {
+    font-size: 0.9rem;
+    margin-bottom: 0;
+    font-weight: bold;
+    color: #333;
+}
+
+@media (max-width: 992px) {
+    .people-say-title {
+        font-size: 34px;
+    }
+
+    .people-say-desc {
+
+        font-size: 18px;
+    }
+}
+
+// ** END SECTION WHAT PEOPLE SAY  **//
