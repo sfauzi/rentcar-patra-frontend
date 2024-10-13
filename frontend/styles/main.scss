@@ -125,6 +125,7 @@ body {
         margin-left: 0 !important;
     }
 
+
 }
 
 @media(max-width: 360px) {
@@ -201,6 +202,23 @@ body {
     width: 700px;
     height: auto;
     border-radius: 10px;
+}
+
+
+.extra-image {
+    margin-top: 10px;
+    /* Jarak antara card-search dan gambar */
+    margin-left: -10px;
+    text-align: center;
+    /* Pusatkan gambar secara horizontal */
+}
+
+.extra-image img {
+    max-width: 100%;
+    /* Membuat gambar responsif */
+    height: auto;
+    border-radius: 10px;
+    /* Menambahkan sudut membulat pada gambar */
 }
 
 .image-below-header {
@@ -291,6 +309,10 @@ body {
         /* Wider for tablet screens */
         margin-top: -10px;
         /* Adjust margin for tablet */
+    }
+
+    .extra-image {
+        padding: 0 10px;
     }
 }
 
@@ -488,7 +510,6 @@ body {
 .card:hover {
     border-color: #2447f9;
     transition: all .4s;
-    ;
     /* Change border color on hover */
 }
 
@@ -588,6 +609,7 @@ body {
 
 .category-cars-section {
     padding: 0 70px;
+    margin-top: -30px;
 }
 
 .explore-header-category {
@@ -752,6 +774,9 @@ body {
 // ** END SECTION EXPLORE CATEGORY  **//
 
 
+
+// ** START SECTION HOW IT WORKS  **//
+
 /* General Styling */
 /* General Styling */
 .how-it-works {
@@ -760,8 +785,7 @@ body {
 }
 
 .how-it-works-header {
-    text-align: center;
-    margin-bottom: 70px;
+    text-align: left;
 
 }
 
@@ -872,6 +896,10 @@ body {
         text-align: center;
         /* Center text on small screens */
     }
+
+    .how-it-works-header {
+        text-align: center;
+    }
 }
 
 /* Responsive design */
@@ -890,6 +918,10 @@ body {
         margin-bottom: -50px;
     }
 
+    .how-it-works-header {
+        padding: 0 20px;
+        text-align: center;
+    }
 
     .icon-section {
         flex-direction: column;
@@ -902,3 +934,5 @@ body {
         /* Center text on small screens */
     }
 }
+
+// ** END SECTION HOW IT WORKS  **//
