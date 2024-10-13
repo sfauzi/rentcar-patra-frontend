@@ -953,7 +953,7 @@ body {
 
 /* Title styling */
 .people-say-title {
-    font-size: 3rem;
+    font-size: 2.5rem;
     color: #333;
     font-weight: bold;
     text-align: center;
@@ -964,7 +964,7 @@ body {
     font-size: 20px;
     color: #333;
     text-align: center;
-    margin-top: -20px;
+    margin-top: -30px;
     margin-bottom: 80px;
 }
 
@@ -972,7 +972,8 @@ body {
 /* Scrollable car-review cards container */
 .car-reviews-wrapper {
     display: flex;
-    overflow-x: auto; /* Horizontal scroll jika diperlukan */
+    overflow-x: auto;
+    /* Horizontal scroll jika diperlukan */
     background-color: #051334;
     backdrop-filter: blur(30px);
     padding: 50px;
@@ -997,7 +998,8 @@ body {
 .car-review-card {
     background: #fff;
     color: #000;
-    width: 250px; /* Lebar tetap */
+    width: 250px;
+    /* Lebar tetap */
     min-width: 250px;
     border-radius: 10px;
     padding: 20px;
@@ -1005,21 +1007,33 @@ body {
     display: flex;
     flex-direction: column;
     margin-bottom: 35px;
-    height: auto; /* Tinggi menyesuaikan dengan isi */
+    height: auto;
+    /* Tinggi menyesuaikan dengan isi */
     transition: transform 0.3s, box-shadow 0.3s;
-    animation: slide-left-right 5s linear infinite; /* Animasi gerak */
+    animation: slide-left-right 5s linear infinite;
+    /* Animasi gerak */
 
-/* Animasi gerakan card */
-@keyframes slide-left-right {
-    0% {
-        transform: translateX(0); /* Awal (posisi default) */
+    /* Animasi gerakan card */
+    @keyframes slide-left-right {
+        0% {
+            transform: translateX(0);
+            /* Awal (posisi default) */
+        }
+
+        50% {
+            transform: translateX(-100%);
+            /* Gerak ke kiri sepenuhnya */
+        }
+
+        100% {
+            transform: translateX(100%);
+            /* Kembali ke posisi awal */
+        }
+
     }
-    100% {
-        transform: translateX(-100%); /* Gerak ke kiri sepenuhnya */
-    }
+
 }
 
-}
 .car-review-card:hover {
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
     transform: translateY(-2px);
@@ -1049,7 +1063,8 @@ body {
     margin-bottom: 15px;
     /* Biarkan tinggi deskripsi menyesuaikan dengan teks */
     height: auto;
-    overflow: visible; /* Pastikan tidak ada teks yang tersembunyi */
+    overflow: visible;
+    /* Pastikan tidak ada teks yang tersembunyi */
 }
 
 .card-rating-review {
@@ -1057,7 +1072,7 @@ body {
     /* Space around the rating section */
     color: #FFD700;
     /* Gold color for stars */
-    
+
 }
 
 
@@ -1107,6 +1122,91 @@ body {
     .people-say-desc {
 
         font-size: 18px;
+    }
+}
+
+// ** END SECTION WHAT PEOPLE SAY  **//
+
+
+// ** START SECTION WHAT PEOPLE SAY  **//
+
+.faq-section {
+    background-color: #f6f8fd;
+    /* Background color of the FAQ section */
+    padding: 50px 20px;
+}
+
+.faq-container {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.faq-title {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.faq-description {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
+/* FAQ Card Styles */
+.faq-card {
+    background-color: #fff;
+    border-radius: 11px;
+    margin-bottom: 15px;
+    padding: 15px 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.faq-card:hover {
+    box-shadow: 0 0 0 .25rem #0d6efd40 !important;
+    transition: all .4s;
+}
+
+.faq-question {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: bold;
+}
+
+.faq-icon {
+    font-size: 1.5em;
+    transition: transform 0.3s ease;
+}
+
+.faq-answer {
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.3s ease, padding 0.3s ease;
+    text-align: left;
+}
+
+.faq-card.active .faq-answer {
+    max-height: 500px;
+    /* Adjust this value based on the content length */
+    padding-top: 10px;
+}
+
+.faq-card.active .faq-icon {
+    transform: rotate(45deg);
+    /* Rotating the icon to indicate it's open */
+}
+
+@media (min-width: 800px) {
+    .faq-section {
+        padding: 0 50px;
+    }
+}
+
+@media (max-width: 768px) {
+    .faq-section {
+        padding: 0 40px;
     }
 }
 
