@@ -161,7 +161,7 @@ body {
 }
 
 .card-search {
-  background-color: #f9f9f9;
+  background-color: #f6f8fd;
   border-radius: 10px;
   display: flex;
   gap: 15px;
@@ -171,9 +171,19 @@ body {
 .card-search select {
   padding: 15px;
   border-radius: 10px;
-  border: 1px solid #ccc;
+  border: transparent;
   background: #fff;
   font-size: 16px;
+}
+
+.card-search select:focus {
+  box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.2509803922) !important;
+  transition: all 0.4s;
+}
+
+.card-search input:focus {
+  box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.2509803922) !important;
+  transition: all 0.4s;
 }
 
 .card-search .btn-primary {
@@ -1410,7 +1420,12 @@ body {
   margin-top: 30px;
 }
 
-@media (max-width: 768px) {
+iframe:hover {
+  box-shadow: 0 0 0 0.25rem rgba(104, 163, 251, 0.2509803922) !important;
+  transition: all 0.4s;
+}
+
+@media (max-width: 767px) {
   .footer-container {
     margin-top: 150px;
   }
@@ -1418,12 +1433,48 @@ body {
     width: 300px;
     margin-bottom: 15px;
   }
+  iframe {
+    width: 280px;
+  }
+}
+@media (min-width: 412px) {
+  iframe {
+    width: 315px;
+  }
+}
+@media (min-width: 428px) {
+  iframe {
+    width: 325px;
+  }
+}
+@media (min-width: 393px) {
+  iframe {
+    width: 295px;
+  }
+}
+@media (min-width: 414px) {
+  iframe {
+    width: 310px;
+  }
+}
+@media (min-width: 390px) {
+  iframe {
+    width: 290px;
+  }
+}
+@media (min-width: 428px) {
+  iframe {
+    width: 325px;
+  }
 }
 @media (max-width: 360px) {
   .footer-logo {
     width: 10px;
     height: 55px;
     margin-left: -15px;
+  }
+  iframe {
+    width: 260px;
   }
 }
 @media (max-width: 991px) {
@@ -1448,5 +1499,30 @@ body {
     /* Remove min-width restriction on smaller screens */
     text-align: left;
     /* Center-align text for smaller screens */
+  }
+}
+@media (min-width: 768px) {
+  iframe {
+    width: 660px;
+  }
+}
+@media (min-width: 800px) {
+  iframe {
+    width: 700px;
+  }
+}
+@media (min-width: 820px) {
+  iframe {
+    width: 720px;
+  }
+}
+@media (min-width: 834px) {
+  iframe {
+    width: 730px;
+  }
+}
+@media (min-width: 1024px) {
+  iframe {
+    width: 285px;
   }
 }/*# sourceMappingURL=main.css.map */
