@@ -182,18 +182,22 @@ body {
     border-radius: 10px;
     // border: 1px solid #ccc;
     border: transparent;
-    background: #fff;
+    background: #e5e9f2;
     font-size: 16px;
 }
 
 .card-search select:focus {
     box-shadow: 0 0 0 .25rem #0d6efd40 !important;
     transition: all .4s;
+    background: #fff;
+
 }
 
 .card-search input:focus {
     box-shadow: 0 0 0 .25rem #0d6efd40 !important;
     transition: all .4s;
+    background: #fff;
+
 }
 
 
@@ -1602,6 +1606,7 @@ iframe:hover {
     }
 
 }
+
 @media(min-width: 393px) {
     iframe {
         width: 295px;
@@ -1703,3 +1708,5 @@ iframe:hover {
 }
 
 // ** END SECTION FOOTER  **//
+
+
