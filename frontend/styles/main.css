@@ -6,6 +6,7 @@ body {
   padding: 0;
   box-sizing: border-box;
   background-color: #f6f8fd;
+  scroll-behavior: smooth;
 }
 
 /* Navbar Styles */
@@ -1697,6 +1698,7 @@ iframe:hover {
   display: flex;
   justify-content: space-around;
   margin-bottom: 10px;
+  border: none;
 }
 
 .tab-btn {
@@ -2158,8 +2160,9 @@ iframe:hover {
     /* Adjust font size */
   }
   .btn-book {
-    padding: 8px;
-    font-size: 12px;
+    padding: 12px !important;
+    font-size: 14px !important;
+    margin-bottom: 5px;
     /* Smaller button for mobile */
   }
   .image-grid img {
@@ -2298,5 +2301,293 @@ iframe:hover {
   }
   .card-car-details h2 {
     font-size: 24px;
+  }
+}
+.card-form-booking {
+  background-color: white;
+  /* Card background */
+  border-radius: 15px;
+  /* Rounded corners */
+  padding: 30px;
+  /* Inner padding for content */
+  /* Light shadow for depth */
+}
+
+.card-header {
+  display: flex;
+  /* Align image and title/badge side by side */
+  align-items: center;
+  background-color: transparent;
+  border: none;
+  /* Center items vertically */
+}
+
+.booking-image {
+  border-radius: 20px;
+  /* Rounded corners for image */
+  width: 205px;
+  /* Image width */
+  height: 131px;
+  /* Image height */
+  margin-right: 15px;
+  /* Space between image and title */
+}
+
+.title-badge {
+  margin-bottom: 30px;
+}
+
+.title-badge h3 {
+  font-weight: bold;
+  margin-bottom: 10px !important;
+}
+
+.title-badge h3 {
+  margin: 0;
+  /* Reset margin */
+  font-size: 20px;
+  /* Adjust title font size */
+}
+
+.badge {
+  background-color: #051334;
+  border-radius: 15px;
+  /* Rounded corners */
+  padding: 10px 20px;
+  /* Padding around text */
+  text-align: left;
+  display: inline-block;
+  /* Dynamic width based on content */
+  font-size: 14px;
+  /* Font size */
+  font-weight: bold;
+  /* Bold text */
+  margin-top: 5px;
+  /* Space between title and badge */
+  color: #fff;
+  /* Text color */
+}
+
+.hr-booking hr {
+  border: 1px solid #E0E0E0;
+  /* Horizontal line style */
+  margin: 20px 0;
+  /* Margin above and below line */
+}
+
+.details-title {
+  margin: 0;
+  /* Reset margin */
+  font-size: 16px;
+  /* Adjust font size */
+  font-weight: 700;
+  /* Adjust font weight */
+}
+
+.form-group {
+  margin-bottom: 20px;
+  /* Space between form groups */
+}
+
+.label {
+  display: block;
+  /* Label on its own line */
+  margin-bottom: 5px;
+  /* Space between label and input */
+}
+
+.input-container {
+  display: flex;
+  /* Align icon and input side by side */
+  align-items: center;
+  /* Center items vertically */
+  background-color: #F4F6F8;
+  /* Background color for input */
+  border-radius: 20px;
+  /* Rounded corners */
+  padding: 5px;
+  margin-bottom: 15px;
+  /* Padding for input container */
+}
+
+/* Additional styling to connect the start and until date visually */
+#start-date,
+#until-date {
+  background-color: #F4F6F8;
+}
+
+#start-date {
+  border-right: 0;
+  /* Remove the right border to connect it with until date */
+}
+
+#until-date {
+  border-left: 0;
+  /* Remove the left border to connect it with start date */
+}
+
+.form-group {
+  margin-top: 20px !important;
+}
+
+.form-group label {
+  color: #333;
+  font-weight: 500;
+}
+
+.input-icon {
+  width: 20px;
+  /* Icon width */
+  height: 20px;
+  /* Icon height */
+  margin-left: 10px;
+  /* Space between icon and input */
+}
+
+.form-input {
+  flex: 1;
+  /* Allow input to take remaining space */
+  border: none;
+  /* Remove default border */
+  outline: none;
+  /* Remove outline on focus */
+  background: transparent;
+  /* Transparent background */
+  padding: 10px;
+  /* Padding inside input */
+  border-radius: 10px;
+  /* Rounded corners */
+}
+
+.icon-information {
+  display: flex;
+  /* Align info icon and text side by side */
+  align-items: center;
+  /* Center items vertically */
+  margin-top: 25px;
+  /* Space above information text */
+}
+
+.icon-information p {
+  margin-top: 25px;
+  font-weight: 700;
+  margin-left: 8px;
+  font-size: 14px;
+}
+
+.icon-information img {
+  width: 30px;
+  height: 30px;
+}
+
+.info-icon {
+  width: 20px;
+  /* Info icon width */
+  height: 20px;
+  /* Info icon height */
+  margin-right: 5px;
+  /* Space between icon and text */
+}
+
+/* Booking Details Section */
+.booking-details {
+  margin-bottom: 30px;
+  /* Space between details and button */
+}
+
+.detail-item {
+  display: flex;
+  justify-content: space-between;
+  /* Space between title and details */
+  align-items: center;
+  padding: 10px 0;
+  /* Padding inside each detail item */
+}
+
+.detail-item h3 {
+  margin: 0;
+  /* Remove extra margin from h3 */
+  font-size: 14px;
+  /* Smaller font size for detail title */
+  font-weight: 500;
+  /* Semi-bold for readability */
+}
+
+.detail-item p {
+  margin: 0;
+  font-weight: bold;
+  /* Remove margin from p */
+  font-size: 14px;
+  /* Adjust font size for details */
+  color: #333;
+  /* Text color */
+}
+
+.detail-item.unique-code p {
+  color: #F40F6F;
+}
+
+.detail-item.payment-service p {
+  color: #0ff47e;
+}
+
+.detail-item.grand-total p {
+  color: #2447f9;
+  font-size: 20px;
+}
+
+.car-informations.booking-right {
+  background-color: #fff;
+  border-radius: 15px;
+  /* Rounded corners */
+  padding: 25px 25px;
+  /* Card shadow */
+  margin-bottom: 20px;
+  position: absolute;
+  border-radius: 15px;
+  padding: 25px 25px;
+  width: 100%;
+  position: absolute;
+  transition: top 0.4s ease;
+  /* Smooth transition effect */
+}
+
+.booking-right {
+  max-width: 300px; /* Adjust as necessary */
+  position: relative;
+  overflow: hidden; /* Hide overflow */
+}
+
+@media (max-width: 992px) {
+  .car-informations.booking-right {
+    padding: 35px !important;
+    /* Reduce padding for smaller screens */
+  }
+  .card-header {
+    padding: 0;
+    margin: 0;
+  }
+  .booking-image {
+    border-radius: 20px;
+    /* Rounded corners for image */
+    width: 150px;
+    /* Image width */
+    height: auto;
+    /* Image height */
+    margin-right: 15px;
+    /* Space between image and title */
+  }
+  .title-badge {
+    margin-bottom: 0;
+  }
+  .title-badege h3 {
+    font-size: 14px !important;
+  }
+  #scrolling-card {
+    position: relative; /* Change to relative for normal flow */
+    margin: 0 auto; /* Center the card if needed */
+    width: 100%;
+    top: 0 !important; /* Ensure it takes full width on smaller screens */
+    max-width: 100%;
   }
 }/*# sourceMappingURL=main.css.map */

@@ -43,7 +43,6 @@ document.addEventListener('DOMContentLoaded', function () {
   })
 })
 
-
 // scroll button details car
 document.addEventListener('DOMContentLoaded', function () {
   const leftButton = document.querySelector('.scroll-button.left')
@@ -81,29 +80,50 @@ window.onclick = function (event) {
   }
 }
 
-
 // JavaScript for tab switching
-document.addEventListener("DOMContentLoaded", function() {
-  const tabButtons = document.querySelectorAll('.tab-btn');
-  const tabContents = document.querySelectorAll('.tab-content');
+document.addEventListener('DOMContentLoaded', function () {
+  const tabButtons = document.querySelectorAll('.tab-btn')
+  const tabContents = document.querySelectorAll('.tab-content')
 
   // Ensure the first tab content is visible by default
-  tabContents[0].style.display = 'block';
+  tabContents[0].style.display = 'block'
 
   tabButtons.forEach(button => {
-      button.addEventListener('click', function() {
-          // Remove active class from all buttons
-          tabButtons.forEach(btn => btn.classList.remove('active'));
+    button.addEventListener('click', function () {
+      // Remove active class from all buttons
+      tabButtons.forEach(btn => btn.classList.remove('active'))
 
-          // Add active class to the clicked button
-          this.classList.add('active');
+      // Add active class to the clicked button
+      this.classList.add('active')
 
-          // Hide all content
-          tabContents.forEach(content => content.style.display = 'none');
+      // Hide all content
+      tabContents.forEach(content => (content.style.display = 'none'))
 
-          // Show the corresponding content
-          const tabId = this.getAttribute('data-tab');
-          document.getElementById(tabId).style.display = 'block';
-      });
-  });
-});
+      // Show the corresponding content
+      const tabId = this.getAttribute('data-tab')
+      document.getElementById(tabId).style.display = 'block'
+    })
+  })
+})
+
+window.onscroll = function () {
+  moveCard();
+}
+
+var scrollingCard = document.getElementById('scrolling-card');
+var cardHeight = scrollingCard.offsetHeight; // Get card height
+var maxScrollHeight = 1333; // Set the maximum scroll height to 1333px
+
+function moveCard() {
+  var scrollY = window.scrollY; // Get the Y offset of the page scroll
+  var cardTopPosition = scrollY + 105; // Calculate new top position based on scroll
+
+  // Ensure the card doesn't scroll past maxScrollHeight
+  if (cardTopPosition + cardHeight <= maxScrollHeight) {
+      scrollingCard.style.top = cardTopPosition + 'px'; // Move the card smoothly
+      scrollingCard.classList.remove('fixed'); // Remove fixed class
+  } else {
+      scrollingCard.style.top = maxScrollHeight - cardHeight + 'px'; // Limit the card's position
+      scrollingCard.classList.add('fixed'); // Add fixed class when limit is reached
+  }
+}
