@@ -2553,9 +2553,11 @@ iframe:hover {
 }
 
 .booking-right {
-  max-width: 300px; /* Adjust as necessary */
+  max-width: 300px;
+  /* Adjust as necessary */
   position: relative;
-  overflow: hidden; /* Hide overflow */
+  overflow: hidden;
+  /* Hide overflow */
 }
 
 @media (max-width: 992px) {
@@ -2584,10 +2586,173 @@ iframe:hover {
     font-size: 14px !important;
   }
   #scrolling-card {
-    position: relative; /* Change to relative for normal flow */
-    margin: 0 auto; /* Center the card if needed */
+    position: relative;
+    /* Change to relative for normal flow */
+    margin: 0 auto;
+    /* Center the card if needed */
     width: 100%;
-    top: 0 !important; /* Ensure it takes full width on smaller screens */
+    top: 0 !important;
+    /* Ensure it takes full width on smaller screens */
     max-width: 100%;
+  }
+}
+/* Well-Dones Section Styles */
+.well-dones {
+  background: url("../images/bg-well-done.svg") no-repeat center center;
+  background-size: cover;
+  padding: 60px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* Logo Wrapper */
+.logo-wrapper {
+  text-align: center;
+  margin-bottom: 80px;
+}
+
+.logo-well {
+  width: 350px;
+}
+
+/* Card Styles */
+.well-card {
+  background-color: white;
+  border-radius: 50px;
+  padding: 40px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  max-width: 500px;
+  width: 100%;
+  margin-left: 300px;
+}
+
+.icon-wrapper {
+  margin-bottom: 20px;
+}
+
+.icon-image-card-well {
+  max-width: 80px;
+}
+
+.title-well {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Booking Code Input Styles */
+.booking-code-input {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.input-icon-well {
+  position: absolute;
+  left: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 24px;
+  height: 24px;
+}
+
+.input-field.well-done {
+  width: 100%;
+  padding: 15px 15px 15px 175px;
+  /* Padding kiri secukupnya untuk memberi ruang bagi placeholder */
+  border-radius: 30px;
+  background-color: #F4F6F8;
+  border: 1px solid #E0E0E0;
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+  outline: none;
+}
+
+.input-field.well-done::-moz-placeholder {
+  color: #999;
+}
+
+.input-field.well-done::placeholder {
+  color: #999;
+}
+
+.floating-placeholder {
+  position: absolute;
+  top: 50%;
+  left: 50px;
+  transform: translateY(-50%);
+  font-size: 16px;
+  color: #999;
+  pointer-events: none;
+  transition: 0.2s ease all;
+}
+
+/* Saat input memiliki nilai, pindahkan placeholder */
+.input-field.well-done:not(:-moz-placeholder-shown) + .floating-placeholder {
+  top: 5px;
+  left: 55px;
+  font-size: 12px;
+  color: #333;
+}
+.input-field.well-done:not(:placeholder-shown) + .floating-placeholder,
+.input-field.well-done:focus + .floating-placeholder {
+  top: 5px;
+  left: 55px;
+  font-size: 12px;
+  color: #333;
+}
+
+/* Geser value ke sebelah placeholder */
+.input-field.well-done {
+  text-align: left;
+  /* Tetap kiri */
+}
+
+/* Description Text */
+.description-well {
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 30px;
+}
+
+/* Button Styles */
+.btn-full-width {
+  display: block;
+  width: 100%;
+  padding: 15px;
+  background-color: #2447f9;
+  color: white;
+  border: none;
+  border-radius: 30px;
+  font-size: 18px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.btn-full-width:hover {
+  box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.2509803922) !important;
+  transition: all 0.4s;
+}
+
+@media (max-width: 768px) {
+  .logo-well {
+    width: 300px;
+  }
+  .well-card {
+    margin-left: 0;
+  }
+  .well-dones {
+    padding: 0 10px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+}
+@media (min-width: 769px) and (max-width: 884px) {
+  .well-card {
+    margin-left: 100px;
   }
 }/*# sourceMappingURL=main.css.map */
