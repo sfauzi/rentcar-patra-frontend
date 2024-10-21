@@ -2761,29 +2761,85 @@ iframe:hover {
 .detail-item {
     display: flex;
     justify-content: space-between;
-    /* Space between title and details */
     align-items: center;
     padding: 10px 0;
-    /* Padding inside each detail item */
 }
 
 .detail-item h3 {
     margin: 0;
-    /* Remove extra margin from h3 */
     font-size: 14px;
-    /* Smaller font size for detail title */
     font-weight: 500;
-    /* Semi-bold for readability */
+    position: relative;
 }
 
 .detail-item p {
     margin: 0;
     font-weight: bold;
-    /* Remove margin from p */
     font-size: 14px;
-    /* Adjust font size for details */
     color: #333;
-    /* Text color */
+}
+
+/* Tooltip wrapper to position the icon */
+.tooltip-wrapper {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+/* Style for the icon */
+.tooltip-icon {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-left: 8px;
+    background-color: #0ff47e3b;
+    /* Circle background color */
+    border-radius: 50%;
+    /* Circle shape */
+    color: #0ff47e;
+    /* Icon color */
+    font-size: 12px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 20px;
+    /* Vertically center text */
+    cursor: pointer;
+    position: relative;
+}
+
+
+
+/* Tooltip text */
+.tooltip-text {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #fff;
+    /* White background */
+    color: #333;
+    /* Dark text color */
+    padding: 15px;
+    /* Padding around text */
+    border-radius: 8px;
+    /* Rounded border */
+    font-size: 12px;
+    margin-top: 8px;
+    font-weight: bold;
+    z-index: 1;
+    width: 250px;
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+    /* Optional: Shadow for tooltip */
+    /* Set a maximum width for long text */
+    white-space: normal;
+    /* Allows text to wrap onto the next line */
+    word-wrap: break-word;
+    /* Forces text to break if it's too long for one line */
+}
+
+/* Show tooltip text when hovering over the icon */
+.tooltip-icon:hover+.tooltip-text {
+    display: block;
 }
 
 .detail-item.unique-code p {
