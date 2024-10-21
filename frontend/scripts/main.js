@@ -127,3 +127,11 @@ function moveCard() {
       scrollingCard.classList.add('fixed'); // Add fixed class when limit is reached
   }
 }
+
+const termsRadio = document.getElementById('termsRadio')
+
+termsRadio.addEventListener('click', function () {
+  if (this.checked) {
+    this.disabled = true // Disable the radio button once it's clicked
+  }
+})

@@ -2576,6 +2576,40 @@ iframe:hover {
   display: block;
 }
 
+/* Styling for radio button and label */
+.terms-condition {
+  display: flex;
+  align-items: center;
+  margin-top: 15px;
+  /* Space between payment and terms section */
+}
+
+.terms-condition input[type=radio] {
+  width: 25px;
+  height: 25px;
+  margin-right: 10px;
+  accent-color: #2447f9;
+  /* Blue circle color for radio button */
+  border-radius: 50%;
+  /* Makes the radio button circular */
+  cursor: pointer;
+}
+
+.terms-condition p {
+  margin: 0;
+  font-size: 14px;
+  font-weight: 500;
+  color: #333;
+}
+
+.terms-condition p a {
+  text-decoration: none;
+  font-weight: bold;
+  color: #2447f9;
+  /* Link color */
+  cursor: pointer;
+}
+
 .detail-item.unique-code p {
   color: #F40F6F;
 }
