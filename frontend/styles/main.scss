@@ -2346,7 +2346,13 @@ iframe:hover {
         /* Stack the columns vertically on smaller screens */
     }
 
-    .column-left,
+    .column-left {
+        flex: 1;
+        padding: 0;
+        margin-top: 30px;
+        /* Remove extra padding to avoid overflow */
+    }
+
     .column-right {
         flex: 1;
         padding: 0;
@@ -2663,6 +2669,7 @@ iframe:hover {
     margin-bottom: 15px;
     /* Padding for input container */
 }
+
 
 /* Additional styling to connect the start and until date visually */
 
@@ -3125,4 +3132,198 @@ iframe:hover {
     .well-card {
         margin-left: 100px;
     }
+}
+
+
+
+
+.booking-card {
+    background-color: white;
+    padding: 0 25px;
+    padding-top: 10px;
+    border-radius: 16px;
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.column-right.check-bookings {
+    flex: 5;
+    padding-left: 10px;
+    /* Left space for better readability */
+}
+
+.column-left.check-bookings {
+    flex: 7;
+    padding-right: 10px;
+    /* Right space for better readability */
+}
+
+.column-left.check-bookings h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.column-left.check-bookings p {
+    margin-bottom: 20px;
+}
+
+.booking-form {
+    display: flex;
+    gap: 20px;
+    width: 100%;
+}
+
+.form-group.check-bookings {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.input-container.check-bookings {
+    display: flex;
+    /* Align icon and input side by side */
+    align-items: center;
+    /* Center items vertically */
+    background-color: #F4F6F8;
+    /* Background color for input */
+    border-radius: 20px;
+    /* Rounded corners */
+    padding: 5px;
+    width: 300px;
+    /* Padding for input container */
+}
+
+.input-icon.check-bookings {
+    width: 20px;
+    /* Icon width */
+    height: 20px;
+    /* Icon height */
+    margin-left: 10px;
+    // padding: 0 20px;
+    /* Space between icon and input */
+}
+
+
+.check-button {
+    padding: 12px 24px;
+    background-color: #2447f9;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    margin-top: 35px;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.check-button:hover {
+    box-shadow: 0 0 0 .25rem #0d6efd40 !important;
+    transition: all .4s;
+}
+
+.details-background.check-bookings {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-top: 100px;
+    width: 100%;
+    height: 30vh;
+    background-color: #051334;
+    // background-image: url("../svg/bg-header-details2.svg");
+    background-size: cover;
+    background-position: center;
+    z-index: 1;
+    /* Behind content */
+    background-attachment: scroll;
+    overflow: hidden;
+    /* Prevent content overflow */
+}
+
+.btn-call-customer {
+    display: block;
+    width: 100%;
+    /* Makes the button span the full width */
+    padding: 10px;
+    font-weight: bold;
+    margin-top: 20px;
+    background-color: #E5E9F2;
+    color: #333333;
+    border: none;
+    border-radius: 50px;
+    /* Fully rounded corners */
+    font-size: 14px;
+    text-align: center;
+    margin-top: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-call-customer:hover {
+    box-shadow: 0 0 0 .25rem #e5e9f25f !important;
+    transition: all .4s;
+}
+
+
+/* Responsiveness for Mobile and Tablet */
+// @media (max-width: 768px) {
+//     .input-container.check-bookings {
+//         width: 100%;
+//         padding: 10px;
+//     }
+
+//     .check-button {
+//         width: 100%;
+//         margin-top: 20px;
+//     }
+
+//     .booking-form {
+//         gap: 15px;
+//     }
+// }
+
+/* Responsive for mobile */
+@media (max-width: 992px) {
+    .booking-card {
+        flex-direction: column;
+        padding: 30px;
+        margin-bottom: 25px;
+    }
+
+    .column-left.check-bookings,
+    .column-right.check-bookings {
+        flex: 1;
+        padding: 0;
+        /* Remove extra padding to avoid overflow */
+    }
+
+
+    .input-container.check-bookings {
+        width: 100% !important;
+        margin-bottom: -20px;
+    }
+
+    .check-button {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .booking-form {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .form-group.check-bookings {
+        width: 100%;
+        padding: 0;
+    }
+
+    .check-button {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
 }
